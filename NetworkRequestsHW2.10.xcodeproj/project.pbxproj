@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A567D8F62700B76A0035C955 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5E7E9472700A9AE00E276C6 /* AppDelegate.swift */,
+				A5E7E9492700A9AE00E276C6 /* SceneDelegate.swift */,
+				A5E7E9552700A9B000E276C6 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A567D8F72700B7730035C955 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				A5E7E94B2700A9AE00E276C6 /* ViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		A567D8F82700B7830035C955 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A5E7E9502700A9B000E276C6 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A567D8F92700B7960035C955 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A5E7E94D2700A9AE00E276C6 /* Main.storyboard */,
+				A5E7E9522700A9B000E276C6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A5E7E93B2700A9AE00E276C6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		A5E7E9462700A9AE00E276C6 /* NetworkRequestsHW2.10 */ = {
 			isa = PBXGroup;
 			children = (
-				A5E7E9472700A9AE00E276C6 /* AppDelegate.swift */,
-				A5E7E9492700A9AE00E276C6 /* SceneDelegate.swift */,
-				A5E7E94B2700A9AE00E276C6 /* ViewController.swift */,
-				A5E7E94D2700A9AE00E276C6 /* Main.storyboard */,
-				A5E7E9502700A9B000E276C6 /* Assets.xcassets */,
-				A5E7E9522700A9B000E276C6 /* LaunchScreen.storyboard */,
-				A5E7E9552700A9B000E276C6 /* Info.plist */,
+				A567D8F72700B7730035C955 /* Viewcontrollers */,
+				A567D8F92700B7960035C955 /* Storyboards */,
+				A567D8F62700B76A0035C955 /* App */,
+				A567D8F82700B7830035C955 /* Resourses */,
 			);
 			path = NetworkRequestsHW2.10;
 			sourceTree = "<group>";
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkRequestsHW2.10/Info.plist;
+				INFOPLIST_FILE = NetworkRequestsHW2.10/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K242QA4C2Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkRequestsHW2.10/Info.plist;
+				INFOPLIST_FILE = NetworkRequestsHW2.10/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
