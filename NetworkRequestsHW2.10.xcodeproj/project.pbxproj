@@ -10,6 +10,7 @@
 		A567D8FB2700B8D40035C955 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A567D8FA2700B8D40035C955 /* .gitignore */; };
 		A567D8FE2700BF6D0035C955 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567D8FD2700BF6D0035C955 /* Quote.swift */; };
 		A567D9062700E5B00035C955 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567D9052700E5B00035C955 /* NetworkManager.swift */; };
+		A567D9342700FED50035C955 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A567D9332700FED50035C955 /* Welcome.swift */; };
 		A5E7E9482700A9AE00E276C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E7E9472700A9AE00E276C6 /* AppDelegate.swift */; };
 		A5E7E94A2700A9AE00E276C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E7E9492700A9AE00E276C6 /* SceneDelegate.swift */; };
 		A5E7E94C2700A9AE00E276C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E7E94B2700A9AE00E276C6 /* MainViewController.swift */; };
@@ -22,6 +23,7 @@
 		A567D8FA2700B8D40035C955 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A567D8FD2700BF6D0035C955 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		A567D9052700E5B00035C955 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A567D9332700FED50035C955 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		A5E7E9442700A9AE00E276C6 /* NetworkRequestsHW2.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkRequestsHW2.10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E7E9472700A9AE00E276C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5E7E9492700A9AE00E276C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A567D8FD2700BF6D0035C955 /* Quote.swift */,
+				A567D9332700FED50035C955 /* Welcome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				A5E7E94C2700A9AE00E276C6 /* MainViewController.swift in Sources */,
 				A567D9062700E5B00035C955 /* NetworkManager.swift in Sources */,
 				A5E7E9482700A9AE00E276C6 /* AppDelegate.swift in Sources */,
+				A567D9342700FED50035C955 /* Welcome.swift in Sources */,
 				A5E7E94A2700A9AE00E276C6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@ class NetworkManager {
 
     private init() {}
 
-    func fetchData(urlAddress: String, with complition: @escaping (Quote) -> Void) {
+    func fetchData(urlAddress: String, with complition: @escaping (Welcome) -> Void) {
         guard let url = URL(string: urlAddress) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -22,9 +22,9 @@ class NetworkManager {
             }
             
             do {
-                let quote = try JSONDecoder().decode(Quote.self, from: data)
+                let welcome = try JSONDecoder().decode(Welcome.self, from: data)
                 DispatchQueue.main.async {
-                    complition(quote)
+                    complition(welcome)
                 }
             } catch let error {
                 print(error.localizedDescription)

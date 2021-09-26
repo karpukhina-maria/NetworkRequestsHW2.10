@@ -9,6 +9,9 @@ struct Quote: Decodable {
     let body: String?
     let author: String?
     var description: String? {
-        "\(body ?? "")\n\(author ?? "")"
+        """
+        \(body ?? "")
+        \(author ?? "")
+        """
     }
 }

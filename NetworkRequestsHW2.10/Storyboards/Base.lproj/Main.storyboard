@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,27 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-DZ-4I7">
-                                <rect key="frame" x="16" y="173" width="288" height="222"/>
+                                <rect key="frame" x="16" y="97.5" width="288" height="373"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, click button below to get a quote for you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a7-JD-liy">
-                                        <rect key="frame" x="19" y="0.0" width="250" height="149"/>
+                                        <rect key="frame" x="19" y="0.0" width="250" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="KmP-Zd-yJc"/>
-                                            <constraint firstAttribute="height" constant="149" id="OrZ-KH-mEj"/>
+                                            <constraint firstAttribute="height" constant="300" id="OrZ-KH-mEj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf5-ji-Reo">
-                                        <rect key="frame" x="44" y="184" width="200" height="38"/>
+                                        <rect key="frame" x="40.5" y="335" width="207.5" height="38"/>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="jZp-r3-SLS"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Get quote">
+                                        <buttonConfiguration key="configuration" style="plain" title="Get quote of the day">
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
