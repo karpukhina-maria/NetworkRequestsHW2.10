@@ -6,29 +6,27 @@
 //
 
 import Foundation
+import Alamofire
+import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
-
+    
     private init() {}
-
-    func fetchData(urlAddress: String, with complition: @escaping (Welcome) -> Void) {
-        guard let url = URL(string: urlAddress) else { return }
+    
+    func fetchData(urlAddress: String, with complition: @escaping (Quote) -> Void) {
         
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                let welcome = try JSONDecoder().decode(Welcome.self, from: data)
-                DispatchQueue.main.async {
-                    complition(welcome)
+        AF.request(urlAddress)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    DispatchQueue.main.async {
+                        complition(Quote.getQuoteData(from: value))
+                    }
+                case .failure(let error):
+                    print(error)
                 }
-            } catch let error {
-                print(error.localizedDescription)
             }
-        }.resume()
     }
 }

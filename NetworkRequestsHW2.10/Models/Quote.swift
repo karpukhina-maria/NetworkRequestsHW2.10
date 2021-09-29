@@ -14,8 +14,19 @@ struct Quote: Decodable {
         \(author ?? "")
         """
     }
-}
+    
+    init(quoteData: [String: Any]) {
+        body = quoteData["body"] as? String
+        author = quoteData["author"] as? String
+    }
+    init(body: String, author: String) {
+        self.body = body
+        self.author = author
+    }
 
-struct Welcome: Decodable {
-    let quote: Quote?
+    static func getQuoteData(from value: Any) -> Quote {
+        guard let welcomeData = value as? [String: Any] else { return Quote(body: "", author: "") }
+        guard let quoteData = welcomeData["quote"] as? [String: Any] else { return Quote(body: "", author: "") }
+        return Quote(quoteData: quoteData)
+    }
 }

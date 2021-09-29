@@ -14,8 +14,8 @@ class MainViewController: UIViewController {
     @IBOutlet var quoteTextLabel: UILabel!
     
     @IBAction func getQuoteButtonPressed() {
-        NetworkManager.shared.fetchData(urlAddress: urlAddress) { welcome in
-            self.quoteTextLabel.text = welcome.quote?.description
+        NetworkManager.shared.fetchData(urlAddress: urlAddress) { quote in
+            self.quoteTextLabel.text = quote.description
         }
     }
 }
