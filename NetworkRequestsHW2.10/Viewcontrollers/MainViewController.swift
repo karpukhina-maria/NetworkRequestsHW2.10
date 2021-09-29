@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let urlAddress = "https://favqs.com/api/qotd"
+    private let urlAddress = "https://favqs.com/api/qotd"
     
     @IBOutlet var quoteTextLabel: UILabel!
     

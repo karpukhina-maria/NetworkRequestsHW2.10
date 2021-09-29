@@ -1,0 +1,6 @@
+framework module Pods_NetworkRequestsHW2_10 {
+  umbrella header "Pods-NetworkRequestsHW2.10-umbrella.h"
+
+  export *
+  module * { export * }
+}

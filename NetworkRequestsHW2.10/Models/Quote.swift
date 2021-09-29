@@ -15,3 +15,7 @@ struct Quote: Decodable {
         """
     }
 }
+
+struct Welcome: Decodable {
+    let quote: Quote?
+}
