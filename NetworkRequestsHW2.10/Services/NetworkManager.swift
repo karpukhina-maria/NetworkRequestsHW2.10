@@ -5,9 +5,7 @@
 //  Created by Mary Jane on 26.09.2021.
 //
 
-import Foundation
 import Alamofire
-import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
